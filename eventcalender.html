@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradLink Events Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="GradLink Logo">
+                <h1>GradLink</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="networking.html">Networking</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="job.html">Jobs</a></li>
+                <li><a href="eventcalender.html">Events</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="events-calendar-section">
+            <div class="events-header">
+                <h2>Events Calendar</h2>
+            </div>
+            <div class="events-content">
+                <aside class="filter-sidebar">
+                    <h3>Find Events</h3>
+                    <form>
+                        <div class="filter-group">
+                            <label for="event-type">By Type</label>
+                            <select id="event-type">
+                                <option value="all">All</option>
+                                <option value="seminar">Seminar</option>
+                                <option value="workshop">Workshop</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="date-from">Date From</label>
+                            <input type="date" id="date-from">
+                        </div>
+                        <div class="filter-group">
+                            <label for="date-to">Date To</label>
+                            <input type="date" id="date-to">
+                        </div>
+                        <div class="filter-group">
+                            <label for="location">By Location</label>
+                            <select id="location">
+                                <option value="all">All</option>
+                                <option value="newyork">New York</option>
+                                <option value="losangeles">Los Angeles</option>
+                                <option value="chicago">Chicago</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="apply-button">Apply</button>
+                    </form>
+                </aside>
+
+                <section class="events-list">
+                    <div class="events-results-header">
+                        <p>28 Results</p>
+                        <nav class="pagination">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                        </nav>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <h4>Friday 7/4/24</h4>
+                        </div>
+                        <div class="event-details">
+                            <h4>Friday 7/4/24</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non varius odio.</p>
+                            <a href="#" class="event-action-link">Add to Calendar</a>
+                        </div>
+                        <img src="event-image1.jpg" alt="Event Image" class="event-image">
+                    </div>
+
+                    <!-- Repeat for other events -->
+                    
+                    <div class="submit-update-section">
+                        <div class="submit-event">
+                            <h4>Submit an Alumni Event</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas.</p>
+                            <button class="submit-button">Submit an Event</button>
+                        </div>
+                        <div class="update-event">
+                            <h4>Update Your Event</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas.</p>
+                            <button class="update-button">Contact Us</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="footer-logo.png" alt="GradLink Logo">
+                <p>Connect with us on:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        <p>&copy; 2024 GradLink. All rights reserved.</p>
+    </footer>
+</body>
+</html>
