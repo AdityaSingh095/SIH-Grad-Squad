@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradLink Jobs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="GradLink Logo">
+                <h1>GradLink</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="networking.html">Networking</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="job.html">Jobs</a></li>
+                <li><a href="eventcalender.html">Events</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Find Your Dream Job Today!</h2>
+                <p>Connecting Talent with Opportunity: Your Gateway to Career Success</p>
+                <div class="search-bar">
+                    <select>
+                        <option value="">Job Title or Company</option>
+                    </select>
+                    <select>
+                        <option value="">Select Location</option>
+                    </select>
+                    <select>
+                        <option value="">Select Category</option>
+                    </select>
+                    <button class="search-button">Search Job</button>
+                </div>
+                <div class="job-stats">
+                    <div>25,550 Jobs</div>
+                    <div>12,310 Members</div>
+                    <div>14,800 Companies</div>
+                </div>
+            </div>
+            <div class="sponsor-logos">
+                <img src="spotify.png" alt="Spotify">
+                <img src="slack.png" alt="Slack">
+                <img src="adobe.png" alt="Adobe">
+                <img src="asana.png" alt="Asana">
+                <img src="linear.png" alt="Linear">
+            </div>
+        </section>
+
+        <section class="jobs-section">
+            <h3>Recent Jobs Available</h3>
+            <div class="job-list">
+                <!-- Example Job Card -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <h4>Forward Security Director</h4>
+                        <p>Bauch, Stiedemann and Stiedemann</p>
+                        <span class="job-type">Full-time</span>
+                        <span class="job-salary">$100K - $120K</span>
+                        <span class="job-location">New York, USA</span>
+                    </div>
+                    <button class="job-details-button">Job Details</button>
+                </div>
+                <!-- Repeat the above block for each job listing -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="footer-logo.png" alt="GradLink Logo">
+                <p>Connect with us on:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        <p>&copy; 2024 GradLink. All rights reserved.</p>
+    </footer>
+</body>
+</html>
